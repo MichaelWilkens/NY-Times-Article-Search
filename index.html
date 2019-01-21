@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Staatliches" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src=""></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="bg">
+        
+        <div id='background-image'></div>
+
+        <div id='main-content'>
+            <header id="header-container">
+                <h1>NEW YORK TIMES SEARCH</h1>
+            </header>
+            
+            <section>
+                <div id="search-container">
+                    <div id="search-title"> 
+                        <h2> Search Parameters</h2>
+                    </div>
+                    
+                    <form action="#">
+                        <p>Search Term:</p>
+                        <input id="search" type="text" class="input-boxes">
+                        <p>Number of Records to Retrive:</p>
+                        <input id="record-number" type="text" class="input-boxes" placeholder='Max 10'>
+                        <p>Start Year (optional):</p>
+                        <input id="starting-year" type="text" class="input-boxes" placeholder='YYYYMMDD'>
+                        <p>End of Year (optional):</p>
+                        <input id="end-year" type="text" class="input-boxes" placeholder='YYYYMMDD'>
+
+                        <button class="inline-button" id="search-button"> <p>search</p></button> 
+                        <button class="inline-button" id="clear-button"> <p>clear results</p></button>
+                    </form>
+                </div>
+
+                <div id="article-container">
+                    <div id="title-article">
+                    <h2 id="text">Top Articles</h2>
+                    </div>
+
+                    <div id="top-articles"></div>
+                
+                </div>
+            </section>
+        </div>    
+    </div>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+    </script>
+    <script src='app.js'></script>
+</body>
+</html>
